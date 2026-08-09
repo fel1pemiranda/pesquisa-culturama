@@ -10,8 +10,8 @@
         <h1>Pesquisa Online Culturama</h1>
     </header>
     <section>
-        <form action="" method="get">
-            <fieldset>
+    <form action="" method="get">
+        <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="name">Nome:</label>
             <input id="name" type="text" name="name" required>
@@ -30,9 +30,9 @@
             <br>
             <label for="image">Upload de Foto:</label>
             <input id="image" type="file" accept="image/*" name="image">
-            </fieldset> 
+        </fieldset> 
                  
-            <fieldset>
+        <fieldset>
             <legend>Pefil</legend>
 
             <p>Gênero:</p>
@@ -116,8 +116,26 @@
                 <label for="color">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
         </fieldset>
-            <button type="submit">Enviar</button>    
-        </form>
-     </section>
+
+        <fieldset>
+            <legend>Pesquisa de Opinião</legend>
+            <p>Sua satisfação:</p>
+            <input id="otima" type="radio" name="userGender" value="otima">
+            <label for="otima">Ótima</label>
+
+            <input id="boa" type="radio" name="userGender" value="boa">
+            <label for="boa">Boa</label>
+
+            <input id="regular" type="radio" name="userGender" value="regular">
+            <label for="regular">Regular</label>
+
+            <input id="ruim" type="radio" name="userGender" value="ruim">
+            <label for="ruim">Ruim</label>
+            <br>
+            <textarea name="coment" id="coment" placeholder="Escreva sua opinião"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>    
+    </form>
+    </section>
 </body>
 </html>
